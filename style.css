@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #228B22;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header .logo h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#produtos {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+#produtos h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.produtos-lista {
+  display: flex;
+  justify-content: space-around;
+}
+
+.produto {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.produto img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.produto p {
+  margin: 10px 0;
+}
+
+.produto button {
+  padding: 10px;
+  background-color: #228B22;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.produto button:hover {
+  background-color: #006400;
+}
+
+#sobre {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#contato {
+  background-color: #228B22;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+#contato h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #228B22;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #006400;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
