@@ -167,19 +167,14 @@ header nav ul li a:hover {
 }
 
 #contato button:hover {
-  ba
-header .mascote {
-  width: 80px;
-  height: auto;
-  margin-top: 20px;
-  animation: jump 1s ease-in-out infinite;
+  background-color: #2e7d32;
 }
 
-@keyframes jump {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
 }
+
