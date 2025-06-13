@@ -3,37 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Produtos</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loja de Produtos do Campo</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Importando Google Fonts para uma tipografia mais moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Loja de Produtos do Campo</h1>
-        <nav>
-            <a href="#">Início</a>
-            <a href="#">Produtos</a>
-            <a href="#">Contato</a>
-        </nav>
+        <div class="container">
+            <h1>Loja de Produtos do Campo</h1>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Produtos</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
     </header>
 
-    <section class="produtos">
-        <div class="produto">
-            <img src="assets/images/produto1.jpg" alt="Produto 1">
-            <h2>Tomates Frescos</h2>
-            <p>R$ 5,00</p>
-            <button>Comprar</button>
-        </div>
+    <main>
+        <section class="produtos">
+            <div class="produto">
+                <img src="assets/images/produto1.jpg" alt="Tomates Frescos">
+                <h2>Tomates Frescos</h2>
+                <p class="preco">R$ 5,00</p>
+                <button class="comprar">Comprar</button>
+            </div>
 
-        <div class="produto">
-            <img src="assets/images/produto2.jpg" alt="Produto 2">
-            <h2>Alface Orgânica</h2>
-            <p>R$ 3,00</p>
-            <button>Comprar</button>
-        </div>
-    </section>
+            <div class="produto">
+                <img src="assets/images/produto2.jpg" alt="Alface Orgânica">
+                <h2>Alface Orgânica</h2>
+                <p class="preco">R$ 3,00</p>
+                <button class="comprar">Comprar</button>
+            </div>
+
+            <!-- Adicionar mais produtos aqui -->
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Loja do Campo</p>
+        <div class="container">
+            <p>&copy; 2025 Loja do Campo | Todos os direitos reservados</p>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>

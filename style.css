@@ -1,38 +1,58 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Fonte do Google Fonts */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
     color: #333;
 }
 
+/* Estilos do cabeçalho */
 header {
-    background-color: #4CAF50; /* Verde claro */
+    background-color: #4CAF50; /* Verde campo */
     padding: 1rem;
     text-align: center;
     color: white;
 }
 
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
 }
 
 nav a {
     margin: 0 15px;
     text-decoration: none;
     color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+
+/* Seção de Produtos */
+main {
+    padding: 2rem 0;
 }
 
 .produtos {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 2rem;
     flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
 .produto {
@@ -40,51 +60,91 @@ nav a {
     padding: 20px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 250px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .produto:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .produto img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .produto h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #4CAF50;
     margin: 15px 0;
 }
 
-.produto p {
-    font-size: 1.2rem;
-    color: #555;
+.produto .preco {
+    font-size: 1.4rem;
+    color: #FF5722;
+    font-weight: 600;
 }
 
-button {
-    background-color: #ffb74d; /* Amarelo */
+button.comprar {
+    background-color: #ffb74d; /* Amarelo suave */
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
+button.comprar:hover {
     background-color: #ff9800;
 }
 
+/* Rodapé */
 footer {
     background-color: #4CAF50;
     color: white;
     padding: 1rem;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .produtos {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .produto {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .produto {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
