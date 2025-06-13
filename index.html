@@ -1,155 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Verde Paraná - Produtos Frescos</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Produtos</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <h1>Loja de Produtos do Campo</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Produtos</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <h1>Verde Paraná</h1>
-      <p>Festejando o frescor do campo, diretamente para a sua cidade</p>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#produtos">Produtos</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+    <section class="produtos">
+        <div class="produto">
+            <img src="assets/images/produto1.jpg" alt="Produto 1">
+            <h2>Tomates Frescos</h2>
+            <p>R$ 5,00</p>
+            <button>Comprar</button>
+        </div>
 
-  <!-- Seção de Produtos -->
-  <section id="produtos">
-    <h2>Produtos Frescos</h2>
-    <div class="produtos-lista">
-      <!-- Produto 1 -->
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x300/32CD32/FFFFFF?text=Arroz+Orgânico" alt="Arroz Orgânico">
-        <p>Arroz Orgânico</p>
-        <p>R$ 30,00</p>
-        <button>Comprar</button>
-      </div>
-      <!-- Produto 2 -->
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x300/FFD700/FFFFFF?text=Mel+de+Abelha" alt="Mel de Abelha">
-        <p>Mel de Abelha</p>
-        <p>R$ 40,00</p>
-        <button>Comprar</button>
-      </div>
-      <!-- Produto 3 -->
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x300/FF6347/FFFFFF?text=Tomate+Orgânico" alt="Tomate Orgânico">
-        <p>Tomate Orgânico</p>
-        <p>R$ 15,00</p>
-        <button>Comprar</button>
-      </div>
-      <!-- Produto 4 -->
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x300/8B4513/FFFFFF?text=Queijo+Colonial" alt="Queijo Colonial">
-        <p>Queijo Colonial</p>
-        <p>R$ 50,00</p>
-        <button>Comprar</button>
-      </div>
-      <!-- Produto 5 -->
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x300/ADFF2F/FFFFFF?text=Alface+Orgânica" alt="Alface Orgânica">
-        <p>Alface Orgânica</p>
-        <p>R$ 8,00</p>
-        <button>Comprar</button>
-      </div>
-      <!-- Produto 6 -->
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x300/FF4500/FFFFFF?text=Legumes+Frescos" alt="Legumes Frescos">
-        <p>Legumes Frescos</p>
-        <p>R$ 20,00</p>
-        <button>Comprar</button>
-      </div>
-      <!-- Produto 7 -->
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x300/FFDAB9/FFFFFF?text=Banana+Orgânica" alt="Banana Orgânica">
-        <p>Banana Orgânica</p>
-        <p>R$ 12,00</p>
-        <button>Comprar</button>
-      </div>
-      <!-- Produto 8 -->
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x300/8A2BE2/FFFFFF?text=Cenoura+Orgânica" alt="Cenoura Orgânica">
-        <p>Cenoura Orgânica</p>
-        <p>R$ 10,00</p>
-        <button>Comprar</button>
-      </div>
-      <!-- Produto 9 -->
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x300/32CD32/FFFFFF?text=Espinafre+Fresco" alt="Espinafre Fresco">
-        <p>Espinafre Fresco</p>
-        <p>R$ 14,00</p>
-        <button>Comprar</button>
-      </div>
-      <!-- Produto 10 -->
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x300/FFFF00/FFFFFF?text=Limão+Galego" alt="Limão Galego">
-        <p>Limão Galego</p>
-        <p>R$ 9,00</p>
-        <button>Comprar</button>
-      </div>
-      <!-- Produto 11 -->
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x300/FF6347/FFFFFF?text=Maçã+Verde" alt="Maçã Verde">
-        <p>Maçã Verde</p>
-        <p>R$ 15,00</p>
-        <button>Comprar</button>
-      </div>
-      <!-- Produto 12 -->
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x300/00BFFF/FFFFFF?text=Melancia+Fresca" alt="Melancia Fresca">
-        <p>Melancia Fresca</p>
-        <p>R$ 25,00</p>
-        <button>Comprar</button>
-      </div>
-      <!-- Produto 13 -->
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x300/228B22/FFFFFF?text=Abóbora+Orgânica" alt="Abóbora Orgânica">
-        <p>Abóbora Orgânica</p>
-        <p>R$ 18,00</p>
-        <button>Comprar</button>
-      </div>
-      <!-- Produto 14 -->
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x300/FF6347/FFFFFF?text=Uva+Orgânica" alt="Uva Orgânica">
-        <p>Uva Orgânica</p>
-        <p>R$ 30,00</p>
-        <button>Comprar</button>
-      </div>
-      <!-- Produto 15 -->
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x300/32CD32/FFFFFF?text=Manjericão+Fresco" alt="Manjericão Fresco">
-        <p>Manjericão Fresco</p>
-        <p>R$ 7,00</p>
-        <button>Comprar</button>
-      </div>
-    </div>
-  </section>
+        <div class="produto">
+            <img src="assets/images/produto2.jpg" alt="Produto 2">
+            <h2>Alface Orgânica</h2>
+            <p>R$ 3,00</p>
+            <button>Comprar</button>
+        </div>
+    </section>
 
-  <!-- Sobre -->
-  <section id="sobre">
-    <h2>Sobre o Projeto</h2>
-    <p>Verde Paraná é um projeto que visa conectar o campo e a cidade, promovendo a venda de produtos frescos diretamente dos agricultores para os consumidores. Nossa missão é levar alimentos saudáveis e sustentáveis para a mesa de todos.</p>
-  </section>
+    <footer>
+        <p>&copy; 2025 Loja do Campo</p>
+    </footer>
 
-  <!-- Contato -->
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Entre em contato conosco para mais informações sobre nossos produtos e entregas.</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Verde Paraná. Todos os direitos reservados.</p>
-  </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
